@@ -22,23 +22,23 @@ local preset = {
     -- The GitHub account name
     user = "ajh123-development",
     -- The GitHub repository name
-    repo = "IPvCC",
+    repo = "GUIAPI",
     
     -- The branch or commit tree to download (defaults to 'master')
     branch = "main",
     
     -- The local folder to save all the files to (defaults to '/')
-    path = "IPvCC",
+    path = "GUIAPI",
     
     -- Function to run before starting the download
     start = function()
-        if not silent then print("Downloading IPvCC setup...") end
-        fs.delete("IPvCC")
+        if not silent then print("Downloading GUIAPI setup...") end
+        fs.delete("GUIAPI")
     end,
     
     -- Function to run when the download completes
     done = function()
-        shell.run("IPvCC/setup/main.lua")
+        shell.run("GUIAPI/setup/main.lua")
         shell.setDir(myPath)
     end
 }
